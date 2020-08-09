@@ -128,7 +128,7 @@ nav{
     background: #1c1c1c;
 }
 .about__games:active{
-    transform: translateY(4px); 
+    transform: translateY(5px); 
 }
 .about__games p{
     color: #b8b8b8;
