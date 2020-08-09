@@ -64,7 +64,8 @@ nav{
 }
 .games{
     display: flex;
-    height: 500px;
+    flex-direction: column;
+    height: 750px;
     background-color: #4b4b4b; 
 }
 .contact__us{
@@ -85,7 +86,7 @@ nav{
 .about__us h4{
     margin: 0 auto;
     color: #b8b8b8;
-    margin-top: 60px;
+    margin-top: 130px;
     font-size: 30px;
 }
 .about__us p{
@@ -96,6 +97,45 @@ nav{
     margin-right: 30%;
     text-align:justify;
 }
+.games h4{
+    margin: 0 auto;
+    color: #b8b8b8;
+    margin-top: 60px;
+    font-size: 30px;
+}
+.games__box {
+    display: flex;
+}
+.games__box div{
+    background-color: #242424;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 500px;
+}
+.about__games{
+    display: block;
+    margin: 0 auto;
+    width:250px;
+    height:40px;
+    background-color: #242424;
+    border: none;
+    outline:none;
+}
+.about__games:hover{
+    background: #1c1c1c;
+}
+.about__games:active{
+    transform: translateY(4px); 
+}
+.about__games p{
+    color: #b8b8b8;
+    font-size: 20px;
+    font-family: 'Pixel', sans-serif;
+}
+
 
 @media screen and (max-width: 1010px) {
     .topnav a{
