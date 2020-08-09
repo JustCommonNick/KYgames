@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*outline: 1px solid red ;*/
+}
+ @font-face {
+    font-family: Pixel; /* Гарнитура шрифта */
+    src: url(../fonts/Pixel.ttf); /* Путь к файлу со шрифтом */
+   }
+   h1 {
+    font-family: 'Pixel', sans-serif;
+   }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Pixel', sans-serif;
+}
+header{
+    width: 100%;
+    background: #4b4b4b;
+    display: flex;
+    padding-bottom: 3px;
+    position: fixed;   top: 0;   left: 0;   z-index: 9999;
+    border-bottom: 3px solid #242424;
+}
+.header__logo{
+
+    color: #b8b8b8;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+nav{
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: 12px;
+}
+.topnav a{
+    color: #b8b8b8;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.topnav a:hover{
+    border-bottom: 3px solid #b8b8b8;
+}
+.topnav .icon{
+    display: none;
+}
+.about__us{
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    height: 500px;
+    background-color: #242424;
+}
+.games{
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    background-color: #4b4b4b; 
+}
+.contact__us{
+    display: flex;
+    height: 500px;
+    background-color: #242424;
+}
+.media{
+    display: flex;
+    height: 50px;
+    background-color: #4b4b4b;
+}
+.copyright {
+    display: flex;
+    height: 100px;
+    background-color: #242424;
+}
+.about__us h4{
+    margin: 0 auto;
+    color: #b8b8b8;
+    margin-top: 130px;
+    font-size: 30px;
+}
+.about__us p{
+    margin: 0 auto;
+    color: #b8b8b8;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align:justify;
+}
+.games h4{
+    margin: 0 auto;
+    color: #b8b8b8;
+    margin-top: 60px;
+    font-size: 30px;
+}
+.games__box {
+    display: flex;
+}
+.games__box div{
+    background-color: #242424;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 500px;
+}
+.about__games{
+    display: block;
+    margin: 0 auto;
+    width:250px;
+    height:40px;
+    background-color: #242424;
+    border: none;
+    outline:none;
+}
+.about__games:hover{
+    background: #1c1c1c;
+}
+.about__games:active{
+    transform: translateY(5px); 
+}
+.about__games p{
+    color: #b8b8b8;
+    font-size: 20px;
+    font-family: 'Pixel', sans-serif;
+}
+
+
+@media screen and (max-width: 1010px) {
+    .topnav a{
+        display: none;
+    }
+    .topnav a.icon{
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: #fff;
+        font-size: 25px;
+    }
+    nav{
+        width: 100%;
+    }
+    .topnav.responsive{
+        position: relative;
+        top: 50px;
+        left: -120px;
+    }
+    header .topnav.responsive{
+        height: 200px;
+    }
+    .topnav.responsive a.icon{
+        position: absolute;
+        top: -50px;
+        right: -120px;
+    }
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+
